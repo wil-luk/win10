@@ -1,4 +1,4 @@
 # win10 
-powershell
+powershell script collections
 
-joindomain - powershell to joindomain with credential
+joindomain - powershell script to joindomain with credential
