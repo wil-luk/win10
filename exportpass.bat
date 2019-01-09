@@ -1,3 +1,3 @@
-Powershell.exe -executionpolicy remotesigned -File  "exportpass.ps1"
+Powershell.exe -executionpolicy remotesigned -File  "%~dp0exportpass.ps1"
 
 PAUSE
