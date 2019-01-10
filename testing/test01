@@ -1,0 +1,10 @@
+#test encrypted credentials and decrypt for other script use. 
+
+#export-encryter
+$credential = Get-Credential
+#$credential | Export-CliXml -Path 'C:\My\Path\cred.xml'
+$credential | Export-CliXml -Path "C:\My\Secrets\myCred_${env:USERNAME}_${env:COMPUTERNAME}.xml"
+
+#import
+#$credential = Import-CliXml -Path 'C:\My\Path\cred.xml'
+$credential = Import-CliXml -Path "C:\My\Secrets\myCred_${env:USERNAME}_${env:COMPUTERNAME}.xml"
